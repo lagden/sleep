@@ -1,0 +1,56 @@
+{
+  "name": "@tadashi/sleep",
+  "version": "1.0.0",
+  "description": "Sweet dreams.",
+  "main": "src/sleep.js",
+  "__type": "module",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "src"
+  ],
+  "author": "Thiago Lagden",
+  "license": "MIT",
+  "homepage": "https://github.com/lagden/sleep#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lagden/sleep.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lagden/sleep/issues"
+  },
+  "keywords": [
+    "connect",
+    "redis",
+    "lib"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "pretest": "xo",
+    "test": "nyc --reporter=text --reporter=lcov ava"
+  },
+  "devDependencies": {
+    "ava": "3.15.0",
+    "nyc": "15.1.0",
+    "xo": "0.39.1"
+  },
+  "xo": {
+    "envs": [
+      "node"
+    ],
+    "semicolon": false,
+    "rules": {
+      "camelcase": [
+        "error",
+        {
+          "properties": "never"
+        }
+      ],
+      "capitalized-comments": 0,
+      "unicorn/prevent-abbreviations": 0,
+      "promise/prefer-await-to-then": 0
+    }
+  }
+}
