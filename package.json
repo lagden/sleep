@@ -37,6 +37,9 @@
     "xo": "0.39.1"
   },
   "xo": {
+    "ignores": [
+      "example/*"
+    ],
     "envs": [
       "node"
     ],
