@@ -38,7 +38,8 @@
   },
   "xo": {
     "ignores": [
-      "example/*"
+      "example/*",
+      "bin/*"
     ],
     "envs": [
       "node"
