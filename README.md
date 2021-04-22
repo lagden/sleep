@@ -53,15 +53,11 @@ sleep(duration?: number, fulfilled?: boolean, response?: any): Promise
 ## Usage
 
 ```js
-'use strict'
-
 import sleep from '@tadashi/sleep'
 
-(async () => {
-  console.log('before')
-  await sleep()
-  console.log('after')
-})()
+console.log('before')
+await sleep(2)
+console.log('after')
 ```
 
 

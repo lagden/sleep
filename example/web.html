@@ -8,13 +8,11 @@
 	</head>
 	<body>
 		<script type="module">
-			import sleep from '../src/sleep.js';
+			import sleep from '../src/sleep.js'
 
-			(async () => {
-				console.log('before')
-				await sleep()
-				console.log('after')
-			})()
+			console.log('before')
+			await sleep(2) // 2 seconds
+			console.log('after')
 		</script>
 	</body>
 </html>
