@@ -55,7 +55,7 @@ sleep(duration?: number, fulfilled?: boolean, response?: any): Promise
 ```js
 'use strict'
 
-const sleep = require('@tadashi/sleep')
+import sleep from '@tadashi/sleep'
 
 (async () => {
   console.log('before')

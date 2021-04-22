@@ -1,10 +1,7 @@
 'use strict'
 
-const test = require('ava')
-const sleep = require('../src/sleep')
-
-// import test from 'ava'
-// import sleep from '../src/sleep.js'
+import test from 'ava'
+import sleep from '../src/sleep.js'
 
 test('awake', async t => {
 	const response = await sleep()

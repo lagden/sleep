@@ -13,5 +13,4 @@ function sleep(duration = 1, fulfilled = true, response = 'Awake') {
 	})
 }
 
-module.exports = sleep
-// export default sleep
+export default sleep

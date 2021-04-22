@@ -1,9 +1,9 @@
 {
   "name": "@tadashi/sleep",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Sweet dreams.",
   "main": "src/sleep.js",
-  "__type": "module",
+  "type": "module",
   "files": [
     "LICENSE",
     "README.md",
@@ -25,15 +25,15 @@
     "lib"
   ],
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=14.16"
   },
   "scripts": {
     "pretest": "xo",
-    "test": "nyc --reporter=text --reporter=lcov ava"
+    "test": "c8 --reporter=text --reporter=lcov ava"
   },
   "devDependencies": {
     "ava": "3.15.0",
-    "nyc": "15.1.0",
+    "c8": "7.7.1",
     "xo": "0.39.1"
   },
   "xo": {
