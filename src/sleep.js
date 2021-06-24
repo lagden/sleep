@@ -1,5 +1,3 @@
-'use strict'
-
 function sleep(duration = 1, fulfilled = true, response = 'Awake') {
 	return new Promise((resolve, reject) => {
 		const timeoutID = setTimeout(() => {

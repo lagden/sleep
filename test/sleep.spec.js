@@ -1,5 +1,3 @@
-'use strict'
-
 import test from 'ava'
 import sleep from '../src/sleep.js'
 

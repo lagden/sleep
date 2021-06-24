@@ -1,12 +1,10 @@
 {
   "name": "@tadashi/sleep",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Sweet dreams.",
   "main": "src/sleep.js",
   "type": "module",
   "files": [
-    "LICENSE",
-    "README.md",
     "src"
   ],
   "author": "Thiago Lagden",
@@ -20,41 +18,18 @@
     "url": "https://github.com/lagden/sleep/issues"
   },
   "keywords": [
-    "connect",
-    "redis",
-    "lib"
+    "sleep",
+    "sweet",
+    "dreams"
   ],
   "engines": {
     "node": ">=14.16"
   },
   "scripts": {
-    "pretest": "xo",
     "test": "c8 --reporter=text --reporter=lcov ava"
   },
   "devDependencies": {
     "ava": "3.15.0",
-    "c8": "7.7.1",
-    "xo": "0.39.1"
-  },
-  "xo": {
-    "ignores": [
-      "example/*",
-      "bin/*"
-    ],
-    "envs": [
-      "node"
-    ],
-    "semicolon": false,
-    "rules": {
-      "camelcase": [
-        "error",
-        {
-          "properties": "never"
-        }
-      ],
-      "capitalized-comments": 0,
-      "unicorn/prevent-abbreviations": 0,
-      "promise/prefer-await-to-then": 0
-    }
+    "c8": "7.7.3"
   }
 }
